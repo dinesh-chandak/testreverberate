@@ -2,6 +2,14 @@
 <html>
 
 <head>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Reverberate Ventures</title>
@@ -9,111 +17,123 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src='main.js'></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css"></script> -->
+
 </head>
 
 <body>
     <div class="wrap">
         <div id="particles-js"></div>
     </div>
-    <nav class="navbar  navbar-expand-md navbar-light fixed-bottom" id="nav-header">
+    <nav class="navigation navbar bg-white navbar-expand-md navbar-light fixed-bottom" id="nav-header">
         <div class="  container-fluid" id="navbarID">
             <a class="navbar-brand" id="nav-brand" href="">
-                <image id="image" src="/img/web-logo-white.svg" style="height: 3rem; width: 8rem;">
+                <image id="image" src="/img/web-logo-purple.svg" style="height: 3rem; width: 8rem;">
             </a>
 
-            <button class="navbar-toggler" type="button" data-togle="collapse" data-target="navbarReponsive">
+            <button class=" navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class=" navbar-collapse collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Connect</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+                    <li class="nav-item"><a href="#Consult" class="btn btn-primary general-button" id="header-button">Get free
+                            consultation</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="position-fixed brand-logo" id="" style="z-index: 5;padding: 15px;">
-        <image id="image" src="img/web-logo-white.svg" alt="Reverberate" />
+
+    <div class="brand-logo" id="" style="z-index: 5;padding: 15px;position:absolute">
+        <image id="image" src="img/web-logo-purple.svg" alt="Reverberate" />
     </div>
-    <div class="container container-custom row justify-content-center align-middle col-lg-12" style="margin: auto">
-        <div class="content container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center align-middle ">
-            <h1 class="  col-xs-12 col-sm-12 align-middle "> Reverberate Ventures</h1>
-            <h2 id="tagline" class="col-xs-12 col-sm-12"> For all your technology needs.</h2>
-            <p class="on-home" class=" col-xs-12 col-sm-12">Shaping your creative project and bring it to the top in a
-                minute<br>
-                Advanced design for modern and awesome people</p>
-            <br>
-            <div class="command   col-xs-12 col-sm-12">
-                <a id="popup_somedialog_1" data-dialog="somedialog_1" class="button hvr-shutter-in-vertical text-center"
-                    href="#About">
-                    <p id="first-text">Explore</p>
-                    <p id="second-text">Let's get started </p>
-                    <span class="ask-to-scroll">
-                        <span class="arrow">
-                            <span></span>
-                            <span></span>
+
+    <div class="container container-custom d-flex justify-content-center align-middle col-lg-12 page-section " id="Home">
+        <div class="row">
+            <div class="content col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center justify-content-center middle-line">
+                <h1 class="col-xs-12 col-sm-12"> Reverberate Ventures</h1>
+                <h2 id="tagline" class="col-xs-12 col-sm-12">Beyond your expectations.</h2>
+                <br>
+                <div class="command col-xs-12 col-sm-12">
+                    <a id="popup_somedialog_1" data-dialog="somedialog_1"
+                        class="button hvr-shutter-in-vertical text-center" href="#About">
+                        <p id="first-text">Explore</p>
+                        <p id="second-text">Let's get started </p>
+                        <span class="ask-to-scroll">
+                            <span class="arrow">
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="arrow">
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="arrow">
+                                <span></span>
+                                <span></span>
+                            </span>
                         </span>
-                        <span class="arrow">
-                            <span></span>
-                            <span></span>
-                        </span>
-                        <span class="arrow">
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </span>
-                </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6 middle-line text-center ">
+                <image src="img/main-page.png" class="img-respsive">
             </div>
         </div>
-
-        <div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6  text-center ">
-            <image src="img/main-page.png" class="img-respsive">
-        </div>
     </div>
 
 
 
 
 
-    <div class="container container-custom justify-content-center align-middle position-relative col-lg-12" id="About">
-        <div class=" content  col-xs-12 col-sm-12 col-md-12 col-lg-12 justify-content-center align-middle">
-            <h1 class=" ">About US</h1>
-            <h1 class="text-uppercase" style="color:#007bff;font-family: 'Courier New', Courier, monospace"
-                id="brand-about">
-                Reverberate ?</h1>
-            <h2>Yes, if you need a good IT support.</h2>
+    <div class="container d-flex flex-column container-custom justify-content-center bg-white page-section align-middle position-relative col-lg-12"
+        id="About">
+        <div class=" content col-xs-12 col-sm-12 col-md-12 col-lg-12 justify-content-center align-middle">
+            <p class="h3 text-uppercase section-title">About</p>
             <div class="row">
-                <div class="content col-xs-12 col-sm-12 col-md-6 col-lg-6 justify-content-center align-middle">
+                <div
+                    class="content col-xs-12 col-sm-12 col-md-6 col-lg-6 justify-content-center align-middle middle-line">
 
-                    <p class="content  "> Lorem ipsum eu esse aliqua voluptate consectetur duis quis voluptate
-                        proident qui sit reprehenderit
-                        quis esse
-                        in elit excepteur laboris sed occaecat minim ex cupidatat commodo exercitation. <br><br> Ex
-                        dolor
-                        qui ex dolore amet duis
-                        ut anim cupidatat Themehelite.com quis cupidatat proident tempor id sit ut anim sint aliquip
-                        excepteur ut in ullamco elit amet cupidatat commodo
-                        ut quis fugiat sunt commodo in dolore enim aliqua nulla dolor duis aliquip.
+                    <p id="brand-about-head">Reverberate ?</p>
+                    <p class="h2">Yes, if you need a good IT support.</p>
+                    <p class="content text-style"> We are a team of young endeavours, to cater to all our client's technology needs.
+                            As our name "Reverberate" suggests be repeated several times as an echo,
+                            we believe in recurring and continue collaboration with our clients.
+                        <br><br> We follow a constant enhancing procedure to keep our team abreast with new technologies
+                        and research for customer satisfaction, team spirit and market stand-out.
                     </p>
 
                     <br><br>
                     <div
-                        class=" align-center  col-xs-12 col-sm-12 col-md-6 col-lg-6  container-fluid  justify-content-center align-middle d-flex">
-                        <a href="#" class="btn" id="btn-about">Get free consultation</a>
+                        class=" align-center col-xs-12 col-sm-12 col-md-6 col-lg-6  container-fluid  justify-content-center align-middle d-flex">
+                        <a href="#Consult" class="btn btn-primary general-button" id="btn-about">Get free
+                            consultation</a>
                     </div>
                 </div>
                 <div
-                    class="  col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center justify-content-center  postion-relative align-middle">
+                    class=" middle-line col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center justify-content-center  postion-relative align-middle">
                     <img src="img/about-us-vec.svg" class="  img-respsive ">
                 </div>
             </div>
@@ -122,109 +142,110 @@
     </div>
 
 
+    <div class="container container-custom bg-white justify-content-center position-relative text-center d-flex flex-column align-middle
+     col-lg-12" id="section1">
+        <div class="justify-content-center" style="min-height: 100vh; height: inherit;">
 
+            <div class="row justify-content-center content" style="min-height: 75vh">
 
-
-
-    <div class="container container-custom justify-content-center position-relative col-lg-12" id="section1">
-        <div class=" text-center justify-content-center">
-
-            <div class=" row justify-content-center content h-75">
-
-                <div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center justify-content-center">
+                <div id="second-about"
+                    class="container middle-line col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center justify-content-center">
                     <img src="img/about-us-vec.svg" class=" img-respsive">
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6   justify-content-center ">
+                <div class="col-xs-12 middle-line col-sm-12 col-md-6 col-lg-6   justify-content-center ">
                     <div>
                         <h2 class="font-weight-bold">Our <span style="color:#007bff">vision</span></h2>
-                        <p class="font-weight-bold" style="font-size:1.25em;font-family:'Roboto',sans-serif;
-                                    text-align:justify;word-spacing: 5px;">Lorem ipsum eu esse aliqua voluptate
-                            consectetur duis quis voluptate proident qui sit reprehenderit quis esse
-                            in elit excepteur laboris sed occaecat minim ex cupidatat commodo exercitation ex dolor.</p>
+                        <p class="text-style">To create positive impact through our skills. </p>
                     </div>
                     <div>
                         <h2 class="font-weight-bold">What we <span style="color:#007bff">believe</span></h2>
-                        <p class="content font-weight-bold" style="font-size:1.25em;font-family:'Roboto',sans-serif;
-                                    text-align:justify;word-spacing: 5px;">Lorem ipsum eu esse aliqua voluptate
-                            consectetur duis quis voluptate proident qui sit reprehenderit quis esse
-                            in elit excepteur laboris sed occaecat minim ex.</p>
+                        <p class="content text-style">We believe in constant upgrade procedure to maintain optimum quality 
+                            standards and creating longtime impact. We commit to excel and maintain lifetime relationships 
+                            with our clients.</p>
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h-25"
-                style="background: linear-gradient(to bottom right, #FF80AB, #F9EC31);">
-                <blockquote class="blockquote">
-                    <p class="font-weight-bold"
-                        style="font-family:Arial, Helvetica, sans-serif; font-size:2.75em;color:#fff">Strong customer
-                        relationships drive sales, <br> sustainability, and growth.</p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h-25 blackquote-div">
+                <!-- linear-gradient(to bottom right, #FF80AB, #F9EC31); -->
+                <blockquote class="blockquote text-center align-middle">
+                    <p class="font-weight-bold blackquote-text">Strong customer relationships drive sales,
+                        <br> sustainability, and growth.</p>
                 </blockquote>
             </div>
         </div>
 
     </div>
 
-    <div class="container  container-custom justify-content-center p-0 position-relative col-lg-12">
-        <h1 class="OurServices"
-            style="text-align: center; margin-bottom: 50px; font-stretch: sans-serif;font-style: italic; height:50% ;width:100% ">
-            Our Services</h1>
-        <div class="row text-center ">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <span style=" color: Tomato;">
-                    <i class="material-icons" style="font-size: 5rem;">developer_mode
-                    </i>
+    <div class="container page-section content d-flex flex-column bg-white container-custom justify-content-center position-relative col-lg-12"
+        id="Services">
+        <div class="">
+            <p class="h3 text-uppercase section-title">Services</p><br>
+            <p class="h2 text-center"><span style="color:#007bff;font-weight: bold">Solutions</span> we provide</p>
+        </div>
 
-                </span>
-                <h3>Mobile App Development</h3>
+        <div class="row text-center" style="min-height: 75vh;">
+
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container" id="m-dev-container">
+                    <span>
+                        <image id="image" src="/img/icons/mobile-solutions.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">Mobile Solutions</p>
+                </div>
             </div>
 
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <span style=" color: Blue">
-                    <i class="material-icons" style="font-size: 5rem;">speaker_phone</i>
-                </span>
-                <h3>Digital Marketing</h3>
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container">
+                    <span>
+                        <image id="image" src="/img/icons/digital-marketing.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">Digital Marketing</p>
+                </div>
             </div>
 
-
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-
-                <span style="font-size: 5em; color: Red"> <i class="material-icons" style="font-size: 5rem;">code</i>
-                </span>
-                <h3>UI/UX/Web Development</h3>
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container" id="m-dev-container">
+                    <span>
+                        <image id="image" src="/img/icons/software-solutions.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">Software Solutions</p>
+                </div>
             </div>
 
-
-
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-
-                <span style="font-size: 5em; color: Red"> <i class="material-icons"
-                        style="font-size: 5rem;">speaker_phone</i></span>
-                <h3>Software development services</h3>
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container" id="m-dev-container">
+                    <span>
+                        <image id="image" src="/img/icons/web-solutions.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">Web Solutions</p>
+                </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-
-                <span style="font-size: 5em; color: Red"> <i class="material-icons"
-                        style="font-size: 5rem;">speaker_phone</i></span>
-                <h3>ERP solutions</h3>
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container" id="m-dev-container">
+                    <span>
+                        <image id="image" src="/img/icons/design-solutions.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">Designing Solutions</p>
+                </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-
-
-                <span style="font-size: 5em; color: Red"> <i class="material-icons"
-                        style="font-size: 5rem;">speaker_phone</i>
-                </span>
-                <h3>Commerce Managment</h3>
+            <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex s-container-parent">
+                <div class="bg-white justify-content-center m-auto d-flex services-container" id="m-dev-container">
+                    <span>
+                        <image id="image" src="/img/icons/erp-crm-solutions.svg" style="height: 5rem; width: 5rem;">
+                    </span>
+                    <p class="h4 services-tile-head">ERP & CRM Solutions</p>
+                </div>
             </div>
-
-
 
         </div>
 
@@ -232,45 +253,151 @@
 
 
 
-    <div class="container row  container-custom justify-content-center align-center  positive-relative col-lg-12">
-        <iframe width="100%" height="500" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"
-            src="https://maps.google.com/maps?width=100%&amp;height=auto&amp;hl=en&amp;coord=19.41586502321254,72.82121300697328&amp;q=Sunshine%20Heights%2C%20Achole%20Road%2C%20Nalasopara%20East+(Reverberate%20Ventures)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
-                href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="container page-section content d-flex bg-white flex-column container-custom justify-content-center align-center positive-relative col-lg-12"
+        id="Contact">
+        <p class="h3 text-uppercase section-title">Contact</p><br>
 
-            <form class="border border-light p-5">
+        <div class="row p-5 ">
+            <iframe width="100%" height="500"
+                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 middle-line justify-content-center map-iframe"
+                src="https://maps.google.com/maps?width=100%&amp;height=auto&amp;hl=en&amp;coord=19.41586502321254,72.82121300697328&amp;q=Sunshine%20Heights%2C%20Achole%20Road%2C%20Nalasopara%20East+(Reverberate%20Ventures)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+                    href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe>
 
-                <p class="h4 mb-4 text-center">Contact us</p>
+            <div class="col-xs-12 col-sm-12  middle-line col-md-6 col-lg-6" id="Consult">
+                <form class="p-5">
 
+                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
 
-                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <label for="defaultSelect" class="text-style">Enquire for</label>
+                    <select id="defaultSelect" class="browser-default custom-select mb-4">
+                        <option value="" disabled="" selected="">Choose option</option>
+                        <option value="1">Feedback</option>
+                        <option value="2">Report a bug</option>
+                        <option value="3">Feature request</option>
+                        <option value="4">Feature request</option>
+                    </select>
 
-                <label for="defaultSelect">Subject</label>
-                <select id="defaultSelect" class="browser-default custom-select mb-4">
-                    <option value="" disabled="">Choose option</option>
-                    <option value="1" selected="">Feedback</option>
-                    <option value="2">Report a bug</option>
-                    <option value="3">Feature request</option>
-                    <option value="4">Feature request</option>
-                </select>
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                        placeholder="Message"></textarea>
 
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
-                    placeholder="Message"></textarea>
+                    <div class="custom-control custom-checkbox mb-4">
+                        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                        <label class="custom-control-label text-style" for="defaultContactFormCopy">Send me a copy of
+                            this
+                            message</label>
+                    </div>
 
-                <div class="custom-control custom-checkbox mb-4">
-                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                    <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this
-                        message</label>
+                    <button class="btn btn-primary general-button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------------- START OF FOOTER ------------------------------------------->
+
+    <section class="footer1" style="color: white; padding-bottom:70px; background: -webkit-linear-gradient(65deg, #051dff, #b500ff);">
+        <div class="container m-0">
+            <div class="row" style="min-width:100vw; padding: 20px 0px">
+
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <a class="navbar-brand" id="nav-brand" href="">
+                        <image class="footer-logo" id="image" src="img/web-logo-white.svg" alt="Reverberate" />
+                    </a>
+                    <p class="font-italic font-weight-bold">Beyond your expectations.</p>
+
+                    <p class="footer-links">
+                        <a href="#Home" id="home">Home</a>
+
+                        <a href="#About">About</a>
+
+                        <a href="#Services">Services</a>
+
+                        <a href="#Contact">Contact</a>
+                    </p>
+
+                    <p class="footer-company-name"><a href="http://www.reverberate.tech">Reverberate</a> © 2019</p>
                 </div>
 
-                <button class="btn btn-info btn-block" type="submit">Send</button>
-            </form>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    
+                    <div class="media media-container">
+                        <div class="media-left media-left-container">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-map-marker fa-stack-1x fa-inverse media-icon"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <p>Office no 1, Sunshine Heights, Achole Road, Nalasopara East - 401209. </p>
+                        </div>
+                    </div>
+
+                    <div class="media" style="line-height:1.5;padding:10px 0px">
+                        <div class="media-left" style="padding: 0px 6px">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-phone fa-stack-1x fa-inverse media-icon"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <a href="tel:+918169609340">+91-8169609340</a>
+                        </div>
+                    </div>
+
+                    <div class="media" style="line-height:1.5;padding:10px 0px">
+                        <div class="media-left" style="padding: 0px 6px">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse media-icon"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <a href="mailto:contact@reverberate.tech">contact@reverberate.tech</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-12">
+
+                    <div class="subscribe">
+                        <h4>Subscribe us</h4>
+                        <br>
+                        <!-- <p>Nam sunt rem beatae architecto cupiditate numquam.</p> -->
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" placeholder="Email Address">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default input-sm" type="button"><i class="fa fa-check "></i></button>
+                            </span>
+                        </div>
+                        <br>
+                        <p>We respect your privacy.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <p class="footer-company-about">
+                        <span class="font-weight-bold">About the company</span><br><br>
+                        An organisation for all your technology needs.
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a href="https://www.facebook.com/ReverberateVentures/"><i class="fa fa-facebook fa-1x"></i></a>
+                        <a href="https://www.instagram.com/reverberateventures/"><i class="fa fa-instagram fa-1x"></i></a>
+                        <a href="https://es.linkedin.com/company/reverberate-ventures"><i class="fa fa-linkedin fa-1x"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- END TOP FOOTER -->
+
 </body>
-<script src='main.js'></script>
 
 </html>
